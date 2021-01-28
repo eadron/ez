@@ -124,7 +124,7 @@ var post = {
 
         var $config = {
             sites: ['google', 'twitter', 'facebook', 'weibo', 'qq', 'qzone', 'linkedin', 'wechat', 'douban'], // 启用的站点
-            disabled: socialDisabled.split(','), // 禁用的站点
+            disabled: socialDisabled?socialDisabled.split(','):'', // 禁用的站点
             wechatQrcodeTitle: '微信扫一扫：分享', // 微信二维码提示文字
             wechatQrcodeHelper: '<p>微信里点“发现”，扫一下</p><p>二维码便可将本文分享至朋友圈。</p>'
         };
